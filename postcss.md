@@ -24,4 +24,8 @@
 
 PostCSS扎根于前端的工程体系内，拿webpack来说，PostCSS就是以loader的形式存在并且在编译器应用转换工作的。
 
+### PostCSS的外部关系
+
+和PostCSS一样，Sass、Less也是应用较广的CSS预编译工具。不同的是，Sass和Less本身既是一种扩展CSS脚本语言，又提供了编译转化工具。既然是CSS扩展语言，其本身自然有成体系的语言特性，比如变量，控制流，函数，mixin等语言元素。随着不断的发展，PostCSS现在也可以转换Sass和Less语言特性了。
+
 
