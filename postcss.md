@@ -32,4 +32,4 @@ PostCSS扎根于前端的工程体系内，拿webpack来说，PostCSS就是以lo
 
 相比而言，PostCSS最大的设计优势在于其内部的插件机制，为扩展性和定制性提供了可能性。插件机制本身很好理解，PostCSS本身作为loader工作在类似webpack的工程编译流程中，PostCSS解析CSS文件生成AST Tree，其插件流水线处理AST Tree，很多前端工程工具都有类似的设计（如babel)。
 
-<img src="file:///Users/huangwei/Documents/postcssdrawio.png" title="" alt="postcssdrawio.png" data-align="center">
+<img src="postcssdrawio.png" title="" alt="postcssdrawio.png" data-align="center">
