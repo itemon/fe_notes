@@ -4,7 +4,7 @@
 
 交叉编译是指在既定的机器平台下，为目标平台编译可执行机器代码。简单说就是代码运行环境和开发环境不在一起，有跨平台代码运行的诉求。可能的场景有
 
-* 为嵌入式设备编写代码，通常嵌入式设备的体系结构不同，其本身也不太可能提供运行开发编译工具运行环境。
+* 为嵌入式设备编写代码，通常嵌入式设备的体系结构不同，其本身也不太可能提供运行开发编译工具运行的环境。
 * 代码需要跨多平台运行，这是通常应用开发的诉求，比如系统应用希望能跨Windows，Mac，Linux，甚至是Unix系统等，以从多个平台上获得更多的用户群体。
 
 交叉编译本质上还是为了解决跨CPU体系结构。Apple生态内，包含其Mac个人电脑和移动设备，可穿戴设备等，主要由Intel和ARM两大体系结构组成。从应用开发的角度上看，
@@ -109,7 +109,6 @@ xcodebuild -showsdks | grep iphoneos | sort | tail -n 1 | awk '{print $2}'
 #(2)通过platform的版本号，获取SDK的完整路径
 xcrun --show-sdk-path -sdk iphoneos15.5
 # /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
-
 ```
 
 在cmake中，cmake_c_flags接受编译器参数，完整的cmake代码如下
